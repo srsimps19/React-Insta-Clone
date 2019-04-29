@@ -1,6 +1,6 @@
 import React from 'react';
-import CommentsSection from './components/CommentsSection/CommentsSection';
 import PropTypes from 'prop-types';
+import CommentSection from './components/CommentSection/CommentSection';
 
 function PostContainer(props) {
     return(
@@ -15,7 +15,7 @@ function PostContainer(props) {
                     <i class="far fa-heart"></i>
                     <i class="far fa-comment"></i>
                     {posts.likes}
-                    <CommentsSection />
+                    <CommentSection posts={props.posts} />
                     {posts.timestamp}
                 </div>
             ))}

@@ -18,7 +18,7 @@ class App extends React.Component {
     return (
       <>
         <SearchBar />
-        <PostContainer />
+        <PostContainer posts={this.state.posts} />
       </>
     );
   }
