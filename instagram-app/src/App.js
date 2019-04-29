@@ -1,14 +1,25 @@
 import React from 'react';
 import './App.scss';
+import dummyData from './dummy-data';
 import SearchBar from './components/SearchBar/SearchBar';
 
 
-function App() {
-  return (
-    <>
-      <SearchBar />
-    </>
-  );
+
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      posts: dummyData
+    };
+  }
+
+  render() {
+    return (
+      <>
+        <SearchBar />
+      </>
+    );
+  }
 }
 
 export default App;
