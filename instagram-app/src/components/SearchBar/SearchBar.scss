@@ -1,0 +1,43 @@
+.searchBar {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+
+    .left-side {
+        display: flex;
+
+        .fa-instagram {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        p {
+            margin: 0;
+            padding: 5px 15px;
+            font-size: 1rem;
+            color: grey;
+        }
+
+        h2 {
+            font-size: 1rem;
+            font-family: 'Satisfy', cursive;
+            padding-top: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .center {
+
+        input {
+            height: 20px;
+            text-align: center;
+            margin: 10px;
+        }
+    }
+
+    .right-side {
+        .fa-heart {
+            padding: 10px 20px;
+        }
+    }
+}

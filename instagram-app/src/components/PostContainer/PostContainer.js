@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import CommentSection from './components/CommentSection/CommentSection';
+import CommentSection from '../CommentSection/CommentSection';
 
 function PostContainer(props) {
     return(
@@ -11,7 +11,7 @@ function PostContainer(props) {
                         <img src={posts.thumbnailUrl} alt={posts.username} />
                         <h3>{posts.username}</h3>
                     </div>
-                    <img src={posts.imageUrl} />
+                    <img src={posts.imageUrl} alt="post" />
                     <i class="far fa-heart"></i>
                     <i class="far fa-comment"></i>
                     {posts.likes}
@@ -31,7 +31,7 @@ PostContainer.propTypes = {
             imageUrl: PropTypes.string.isRequired,
             likes: PropTypes.number.isRequired,
         })
-    )
+    ).isRequired
 }
 
 export default PostContainer;
