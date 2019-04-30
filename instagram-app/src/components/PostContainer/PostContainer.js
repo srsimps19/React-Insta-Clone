@@ -14,8 +14,8 @@ function PostContainer(props) {
                     </div>
                     <img src={post.imageUrl} alt="post" className="postImage" />
                     <div className="belowPicture">
-                        <i className="far fa-heart"></i>
-                        <i className="far fa-comment"></i>
+                        <i className="far fa-heart fa-lg"></i>
+                        <i className="far fa-comment fa-lg"></i>
                         <h4>{post.likes} likes</h4>
                     </div>
                     <CommentSection comments={post.comments} />
