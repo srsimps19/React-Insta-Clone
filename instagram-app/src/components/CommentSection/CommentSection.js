@@ -17,6 +17,7 @@ function CommentSection(props) {
                         placeholder="Add a comment..."
                         onChange={props.handleChanges}
                     />
+                    <button onClick={props.addNewComment}>Post</button>
                 </form>
             </div>
         </>
