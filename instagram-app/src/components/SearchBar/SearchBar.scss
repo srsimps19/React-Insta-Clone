@@ -1,0 +1,48 @@
+.searchBar {
+    width: 900px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+
+    .left-side {
+        display: flex;
+
+        .fa-instagram {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+
+        p {
+            margin: 0;
+            padding: 0 15px;
+            font-size: 2.5rem;
+            color: grey;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-family: 'Satisfy', cursive;
+            padding-top: 15px;
+            padding-right: 10px;
+        }
+    }
+
+    .center {
+
+        input {
+            width: 275px;
+            height: 40px;
+            text-align: center;
+            margin: 20px 10px 10px 10px;
+            border-radius: 6px;
+            border: 1px solid grey;
+        }
+    }
+
+    .right-side {
+        .fa-heart {
+            padding: 10px 20px;
+        }
+    }
+}
