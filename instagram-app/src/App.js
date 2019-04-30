@@ -16,10 +16,10 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="allPost">
         <SearchBar />
         <PostContainer posts={this.state.posts} />
-      </>
+      </div>
     );
   }
 }

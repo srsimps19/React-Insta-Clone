@@ -6,21 +6,21 @@ import './PostContainer.scss'
 function PostContainer(props) {
     return(
         <>
-            {props.posts.map(posts => (
-                <div key={posts.id} className="posts">
+            {props.posts.map((post,i) => (
+                <div key={i} className="posts">
                     <div className="postHeader">
-                        <img src={posts.thumbnailUrl} alt={posts.username} className="thumbnail"/>
-                        <h4>{posts.username}</h4>
+                        <img src={post.thumbnailUrl} alt={post.username} className="thumbnail"/>
+                        <h4>{post.username}</h4>
                     </div>
-                    <img src={posts.imageUrl} alt="post" />
+                    <img src={post.imageUrl} alt="post" className="postImage" />
                     <div className="belowPicture">
-                        <i class="far fa-heart"></i>
-                        <i class="far fa-comment"></i>
-                        <h4>{posts.likes} likes</h4>
+                        <i className="far fa-heart"></i>
+                        <i className="far fa-comment"></i>
+                        <h4>{post.likes} likes</h4>
                     </div>
-                    <CommentSection posts={props.posts} />
+                    <CommentSection comments={post.comments} />
                     <div className="timestamp">
-                        {posts.timestamp}
+                        {post.timestamp}
                     </div>
                     <div className="addComment">
                         <input

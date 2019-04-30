@@ -1,5 +1,8 @@
 .posts {
     width: 600px;
+    border-radius: 6px;
+    border: 1px solid grey;
+    margin-bottom: 15px;
 
     .postHeader {
         width: 600px;
@@ -16,6 +19,11 @@
             font-size: 1rem;
             padding-top: 25px;
         }
+    }
+
+    .postImage {
+        width: 599px;
+        height: auto;
     }
 
     .belowPicture {
@@ -40,13 +48,15 @@
     }
 
     .addComment {
-        margin-left: 10px;
+        border-top: 1px solid grey;
         
         input {
-            width: 600px;
+            width: 589px;
             height: 60px;
+            margin-left: 10px;
             border: 0;
-            border-top: 1px solid grey;
+            border-bottom-right-radius: 6px;
+            border-right: 1px solid grey;
         }
     }
 }
