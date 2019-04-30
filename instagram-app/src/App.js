@@ -10,8 +10,34 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      posts: dummyData
+      posts: [],
+      commentText: ''
     };
+  }
+
+  componentDidMount() {
+    this.setState({
+      posts: dummyData
+    })
+  }
+
+  handleChanges = e => {
+    this.setState({
+      commentText: e.target.value
+    });
+  }
+
+  addNewComment = (e) => {
+    e.preventDefault();
+    let newComment = { 
+      username: "srsimps19", 
+      commentText: this.state.comment
+    }
+    this.setState(prevState => {
+      return {
+          comments: [...prevState.comments, newComment]
+      }
+    });
   }
 
   render() {

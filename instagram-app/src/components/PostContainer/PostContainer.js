@@ -18,15 +18,9 @@ function PostContainer(props) {
                         <i className="far fa-comment fa-lg"></i>
                         <h4>{post.likes} likes</h4>
                     </div>
-                    <CommentSection comments={post.comments} />
+                    <CommentSection comments={post.comments} handleChanges={post.handleChanges} onSubmit={post.addNewComment}/>
                     <div className="timestamp">
                         {post.timestamp}
-                    </div>
-                    <div className="addComment">
-                        <input
-                            type="text"
-                            placeholder="Add a comment..."
-                        />
                     </div>
                 </div>
             ))}

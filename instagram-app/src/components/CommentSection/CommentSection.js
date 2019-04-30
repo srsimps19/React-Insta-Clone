@@ -10,6 +10,15 @@ function CommentSection(props) {
                     <p>{e.text}</p>
                 </div>
             )}
+             <div className="addComment">
+                <form onSubmit={props.addNewComment}>
+                    <input
+                        type="text"
+                        placeholder="Add a comment..."
+                        onChange={props.handleChanges}
+                    />
+                </form>
+            </div>
         </>
     )
 }

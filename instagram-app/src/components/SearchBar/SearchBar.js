@@ -12,7 +12,7 @@ function SearchBar() {
             <div className="center">
                 <input 
                     type="text"
-                    placeholder="Search" 
+                    placeholder="🔍 Search" 
                 />
             </div>
             <div className="right-side">
