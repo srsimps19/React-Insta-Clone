@@ -1,5 +1,5 @@
 import React from 'react';
-import './Posts.css';
+import './PostContainer.scss';
 
 const PostHeader = props => {
   return (
