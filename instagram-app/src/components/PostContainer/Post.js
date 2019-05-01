@@ -36,6 +36,9 @@ class Post extends React.Component {
           postId={this.props.post.imageUrl}
           comments={this.props.post.comments}
         />
+        <div className="timestamp">
+        {this.props.post.timestamp}
+        </div>
       </>
     );
   }
