@@ -3,22 +3,19 @@ import './SearchBar.scss';
 
 const SearchBar = props => {
   return (
-    <div className="search-bar-wrapper">
-      <div className="image-wrapper">
+    <div className="searchBar">
+      <div className="left-side">
+        <i class="fab fa-instagram fa-3x"></i>
+        <p>|</p>
+        <h2>Instagram</h2>
       </div>
-      <div>
-        <input type="text" placeholder="Search" onKeyDown={props.searchPosts} />
+      <div className="center">
+        <input type="text" placeholder="🔍 Search" onKeyDown={props.searchPosts} />
       </div>
-      <div className="social-wrapper">
-        <div className="social">
-          <i className="far fa-compass" />
-        </div>
-        <div className="social">
-          <i className="far fa-heart" />
-        </div>
-        <div className="social">
-          <i className="far fa-user-circle" />
-        </div>
+      <div className="right-side">
+          <i className="far fa-compass fa-3x" />
+          <i className="far fa-heart fa-3x" />
+          <i className="far fa-user-circle fa-3x" />
       </div>
     </div>
   );
