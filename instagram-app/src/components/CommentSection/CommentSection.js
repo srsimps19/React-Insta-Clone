@@ -11,13 +11,14 @@ function CommentSection(props) {
                 </div>
             )}
              <div className="addComment">
-                <form onSubmit={props.addNewComment}>
+                <form onSubmit={(e) => props.addNewComment(e,props.postIndex)}>
                     <input
                         type="text"
                         placeholder="Add a comment..."
                         onChange={props.handleChanges}
                     />
-                    <button onClick={props.addNewComment}>Post</button>
+                    <input type="hidden" name="postIndex" value={props.postIndex} />
+                    <button>Post</button>
                 </form>
             </div>
         </>

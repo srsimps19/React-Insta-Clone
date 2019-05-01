@@ -18,7 +18,7 @@ function PostContainer(props) {
                         <i className="far fa-comment fa-lg"></i>
                         <h4>{post.likes} likes</h4>
                     </div>
-                    <CommentSection comments={post.comments} handleChanges={props.handleChanges} addNewComment={props.addNewComment}/>
+                    <CommentSection comments={post.comments} handleChanges={props.handleChanges} addNewComment={props.addNewComment} postIndex={i} />
                     <div className="timestamp">
                         {post.timestamp}
                     </div>
