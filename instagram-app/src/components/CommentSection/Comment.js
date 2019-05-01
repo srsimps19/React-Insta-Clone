@@ -4,9 +4,9 @@ import './CommentSection.scss';
 
 const Comment = props => {
   return (
-    <div className="comment-text">
-      <span className="comment">{props.comment.text}</span>{' '}
-      <span className="user">-{props.comment.username}</span>
+    <div className="comments">
+      <h4>{props.comment.username}</h4>
+      <p>{props.comment.text}</p>{' '}
     </div>
   );
 };

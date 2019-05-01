@@ -4,7 +4,7 @@ import'./PostContainer.scss'
 
 const PostContainer = props => {
     return (
-        <div className="posts">
+        <div className="posts-container">
           {props.posts.map(p => <Post key={p.imageUrl} post={p} />)}
         </div>
       );

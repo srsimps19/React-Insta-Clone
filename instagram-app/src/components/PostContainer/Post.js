@@ -18,7 +18,7 @@ class Post extends React.Component {
   };
   render() {
     return (
-      <>
+      <div className="posts">
         <PostHeader
           username={this.props.post.username}
           thumbnailUrl={this.props.post.thumbnailUrl}
@@ -39,7 +39,7 @@ class Post extends React.Component {
         <div className="timestamp">
         {this.props.post.timestamp}
         </div>
-      </>
+      </div>
     );
   }
 }
