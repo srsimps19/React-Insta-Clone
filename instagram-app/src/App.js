@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.scss';
 import PostsPage from './components/PostContainer/PostsPage';
+import withAuenticate from './components/Authentication/withAuthenticate';
 
-
+const ComponentFromWithAuthenticate = withAuenticate(PostsPage);
 
 class App extends React.Component {
   constructor() {
@@ -13,7 +14,7 @@ class App extends React.Component {
   render() {
     return (
       <div className="allPost">
-        <PostsPage />
+        <ComponentFromWithAuthenticate />
       </div>
     );
   }
