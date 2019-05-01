@@ -30,8 +30,8 @@ class PostsPage extends React.Component {
     render() {
         return (
             <>
-                <SearchBar searhTerm={this.state.searchTerm} searchPosts={this.searchPostsHandler} />
-                <PostContainer posts={this.state.filteredPost.length > 0 ? this.state.filterPost : this.state.posts} />
+                <SearchBar searchPosts={this.searchPostsHandler} />
+                <PostContainer posts={this.state.filteredPost.length> 0 ? this.state.filteredPost : this.state.posts} />
             </>
        );
       }

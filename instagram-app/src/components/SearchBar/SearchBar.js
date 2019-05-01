@@ -5,12 +5,12 @@ const SearchBar = props => {
   return (
     <div className="searchBar">
       <div className="left-side">
-        <i class="fab fa-instagram fa-3x"></i>
+        <i className="fab fa-instagram fa-3x"></i>
         <p>|</p>
         <h2>Instagram</h2>
       </div>
       <div className="center">
-        <input type="text" placeholder="🔍 Search" onKeyDown={props.searchPosts} />
+        <input type="text" placeholder="🔍 Search" onChange={props.searchPosts} />
       </div>
       <div className="right-side">
           <i className="far fa-compass fa-3x" />
