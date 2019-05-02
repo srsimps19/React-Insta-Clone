@@ -9,12 +9,21 @@ export const CommentH4 = styled(Heading4)`
   padding-top: 2px;
   margin-left: 10px;`;
 
+export const Comments = styled.div`
+  width: 600px;
+  display: flex;
+  margin: 0;
+
+    p {
+        margin-bottom: 0;
+    }`;
+
 const Comment = props => {
   return (
-    <div className="comments">
+    <Comments>
       <CommentH4>{props.comment.username}</CommentH4>
       <p>{props.comment.text}</p>{' '}
-    </div>
+    </Comments>
   );
 };
 
